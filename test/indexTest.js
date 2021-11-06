@@ -46,7 +46,7 @@ describe('index.js', function () {
 
   describe('matchName()', function () {
     it('accesses the data structure to check if name matches', function () {
-      const drivers = [
+      const driversCity = [
         {
           name: 'Bobby',
           hometown: 'Pittsburgh' },
@@ -64,7 +64,7 @@ describe('index.js', function () {
           hometown: 'Tampa Bay' }
       ];
 
-      expect(matchName(drivers, 'Bobby')).to.eql([
+      expect(matchName(driversCity, 'Bobby')).to.eql([
         {
           name: 'Bobby',
           hometown: 'Pittsburgh'
